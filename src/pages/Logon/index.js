@@ -15,7 +15,7 @@ export default function Logon() {
           <h1>Faça seu logon</h1>
 
           <input type="text" placeholder="Sua ID" />
-          <button type="submit">Entrar</button>
+          <button type="submit" className="button">Entrar</button>
 
           <a href="/register">
             <FiLogIn size={20} color="#E02041" />
