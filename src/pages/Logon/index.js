@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { FiLogIn } from 'react-icons/fi'
 import './style.css'
 
 import heroesImg from '../../assets/heroes.png'
@@ -17,7 +17,10 @@ export default function Logon() {
           <input type="text" placeholder="Sua ID" />
           <button type="submit">Entrar</button>
 
-          <a href="/register">Não tenho cadastro</a>
+          <a href="/register">
+            <FiLogIn size={20} color="#E02041" />
+            Não tenho cadastro
+          </a>
         </form>
       </section>
 
