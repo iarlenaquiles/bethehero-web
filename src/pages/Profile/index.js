@@ -59,7 +59,7 @@ export default function Profile() {
       <h1>Casos cadastrados</h1>
 
       <ul>
-        {incidents.map(incident => (
+        {incidents.length > 0 ? (incidents.map(incident => (
           <li key={incident.id}>
            <strong>CASO:</strong>
            <p>{incident.title}</p>
@@ -74,7 +74,9 @@ export default function Profile() {
              <FiTrash2 size={20} color="#a8a8b3" />
            </button>
          </li>
-        ))}
+        ))) : (
+          <h1>Não existe caso cadastrado</h1>
+          )}
       </ul>
     </div>
   );
